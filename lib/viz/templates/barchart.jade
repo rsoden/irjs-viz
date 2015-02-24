@@ -1,8 +1,6 @@
-svg(width="500", height="100")
-    rect(width="5", height="5", x="0")
-    rect(width="5", height="10", x="10")
-    rect(width="5", height="15", x="20")
-    rect(width="5", height="20", x="30")
-    rect(width="5", height="25", x="40")
-    text(x="0", y="40", fill="red")
-        | some title
+svg(width=w,height=h)
+	each d in data
+		rect(width=d.width, height=d.height, x=d.x, y=135-d.height)
+
+	text(x="50", y="150", fill="red")
+		title
