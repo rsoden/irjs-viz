@@ -1,3 +1,5 @@
-svg(width=w,height=w)
-    each d in data
-		line(x1=d.x1, y1=d.y1, x2=d.x2, y2=d.y2)
+svg(width=w,height=h)
+	circle(cx=data[0].x1 cy=data[0].y1 r="5")
+	each d in data
+		line(x1=d.x1, y1=d.y1, x2=d.x2, y2=d.y2, stroke=stroke, stroke-width=stroke_width)
+		circle(cx=d.x2, cy=d.y2 r="5")

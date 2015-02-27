@@ -1,6 +1,3 @@
 svg(width=w,height=h)
 	each d in data
-		rect(width=d.width, height=d.height, x=d.x, y=135-d.height)
-
-	text(x="50", y="150", fill="red")
-		title
+		rect(width=d.width, height=d.height, x=d.x, y=135-d.height, fill=d.fill)
